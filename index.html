@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My JavaScript App with Bootstrap</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container main">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">dlc</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-center custom-style" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item custom-font">
+                                <button class="btn btn-link">Free Stuff</button>
+                            </li>
+                            <li class="nav-item custom-font">
+                                <button class="btn btn-link" id="free">Free Tutorial</button>
+                            </li>
+                            <li class="nav-item custom-font">
+                                <button class="btn btn-link">Blog</button>
+                            </li>
+                            <li class="nav-item custom-font">
+                                <button class="btn btn-link">1-1 Coaching</button>
+                            </li>
+                            <li class="nav-item custom-font">
+                                <button class="btn btn-link">Contact</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="d-flex">
+                        <button class="btn btn-link">Log In</button>
+                        <button class="btn btn-outline-secondary">Sign In</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="plan-name">
+                        Become Fluent in <span style="color: #234EF6;">Machine Learning</span>
+                    </div>
+                    <div class="plan-details">
+                        Start deep learning from scratch! Explore machine learning, data science, artificial
+                        intelligence
+                        from the ground up - no experience required!
+                    </div>
+                    <div class="plan-buttons">
+                        <button class="btn btn-primary start">Start learning today</button>
+                        <button class="btn btn-secondary explore">Explore courses</button>
+                    </div>
+                    <div class="star">
+                        <p class="stars">
+                            <span class="start-rating">
+                                <i class="far fa-star star-1" data-value="1"></i>
+                                <i class="far fa-star star-2" data-value="2"></i>
+                                <i class="far fa-star star-3" data-value="3"></i>
+                                <i class="far fa-star star-4" data-value="4"></i>
+                                <i class="far fa-star star-5" data-value="5"></i>
+                            </span>
+                            <label><span class="myrating">0</span>/5 from — 500k+ learners</label>
+                        </p>
+                    </div>
+                    <div class="trending-courses">
+                        <span class="trending-courses-title"><img width="10px" height="16px" src="./assets/bolt.svg">
+                            Trending Courses</span>
+                        <ul class="course-list">
+                            <li><img width="20px" height="20px" src="./assets/checked.svg"> Financial Engineering</li>
+                            <li><img width="20px" height="20px" src="./assets/checked.svg"> Deep Learning</li>
+                            <li><img width="20px" height="20px" src="./assets/checked.svg"> Artificial Intelligence</li>
+                        </ul>
+                    </div>
+                    <div class="many-more">
+                        <button class="btn btn-link" id="free">+ many more</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="profile-wrapper">
+                        <div class="profile-details">
+                            <img width="469px" height="610px" src="./assets/Rectangle.svg" alt="">
+                        </div>
+                        <div class="user-info">
+                            <span class="user-name">Andrew Colman</span><br>
+                            <span class="user-role">Machine Learning Engineer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid skills-section">
+        <h1 class="skills-title">Learn the Skills Hiring Managers Want</h1>
+
+        <div class="skills-nav">
+            <button class="scroll-btn left" id="scroll-left">
+                &#10094; <!-- Left arrow symbol -->
+            </button>
+            <button class="scroll-btn right" id="scroll-right">
+                &#10095; <!-- Right arrow symbol -->
+            </button>
+        </div>
+
+        <div class="skills-categories" id="skills-categories">
+            <div class="category-item">
+                <img src="assets/GenerativeAI.svg" alt="Generative AI Icon" width="204px" height="46px">
+            </div>
+            <div class="category-item">
+                <img src="assets/CyberSecurity.svg" alt="Cybersecurity Icon" width="204px" height="46px">
+            </div>
+            <div class="category-item">
+                <img src="assets/MachineLearning.svg" alt="Machine Learning Icon" width="204px" height="46px">
+            </div>
+            <div class="category-item">
+                <img src="assets/BackEnd.svg" alt="Back-End Icon" width="204px" height="46px">
+            </div>
+            <div class="category-item">
+                <img src="assets/CyberSecurity.svg" alt="Cybersecurity Icon" width="204px" height="46px">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ad">
+        <div class="ad-circle"></div>
+        <button class="btn btn-primary ad-button">
+            Start learning today
+        </button>
+        <a href="#" class="ad-link">Join 30 day bootcamp for free</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
